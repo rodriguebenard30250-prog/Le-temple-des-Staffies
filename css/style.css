@@ -1,295 +1,65 @@
-:root {
-    --vert-sauge: #A3B18A;
-    --vert-foret: #588157;
-    --brun-terre: #7F5539;
-    --beige-sable: #EDE0D4;
-    --creme: #F8F5F0;
-    --noir-doux: #1F1F1F;
-
-    /* Couleurs utilisées dans le site */
-    --fond: var(--creme);
-    --fond-section: var(--beige-sable);
-    --texte: var(--noir-doux);
-    --accent: var(--vert-foret);
-    --accent-clair: var(--vert-sauge);
-    --bouton: var(--vert-foret);
-    --bouton-hover: #3f6140;
-body {
-    background: var(--fond);
-    color: var(--texte);
-}
-header {
-    background: white;
-    border-bottom: 1px solid var(--accent-clair);
-}
-
-nav ul li a:hover {
-    color: var(--accent);
-}
-.btn {
-    background: var(--bouton);
-}
-
-.btn:hover {
-    background: var(--bouton-hover);
-}
-.presentation,
-.chiens,
-.chiots-list,
-.actus-list,
-.contact-form {
-    background: var(--fond-section);
-}
-h1, h2, h3 {
-    color: var(--brun-terre);
-}
-.card {
-    background: white;
-    border: 1px solid var(--accent-clair);
-}
-footer {
-    background: var(--brun-terre);
-    color: white;
-}
-}/* RESET */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Style */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f7f7f7;
+    font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: #e8f5e9; /* Soft green background */
 }
 
-/* HEADER */
+/* Header Style */
 header {
-    width: 100%;
-    background: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #ddd;
-}
-
-header .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #222;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #0077cc;
-}
-
-/* HERO */
-.hero {
-    height: 90vh;
-    background: url("../images/hero.jpg") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 70px;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.45);
-}
-
-.hero-text {
-    position: relative;
-    text-align: center;
+    background-color: #4caf50; /* Forest green header */
     color: white;
-}
-
-.hero-text h1 {
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #0077cc;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #005fa3;
-}
-
-/* PRESENTATION */
-.presentation {
-    padding: 80px 40px;
-    background: white;
-}
-
-.presentation .content {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
-.presentation img {
-    width: 45%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.presentation .text {
-    width: 50%;
-}
-
-.presentation h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-/* CHIENS */
-.chiens {
-    padding: 80px 40px;
+    padding: 10px 0;
     text-align: center;
 }
 
-.chiens h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card {
-    background: white;
-    width: 280px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.card h3 {
-    margin: 15px 0;
-}
-
-/* FOOTER */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
+/* Main Content Style */
+main {
     padding: 20px;
-    margin-top: 50px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .presentation .content {
-        flex-direction: column;
-    }
-
-    .presentation img,
-    .presentation .text {
-        width: 100%;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-}.hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.8s;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}.status {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 4px;
+/* Footer Style */
+footer {
+    background-color: #388e3c; /* Darker green footer */
     color: white;
-    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.dispo { background: #28a745; }
-.reserve { background: #ffc107; color: #222; }
-.adopte { background: #dc3545; }.galerie-grid {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* Button Style */
+button {
+    background-color: #81c784; /* Light green button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
-.galerie-grid img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}.contact-form {
-    padding: 40px;
-    max-width: 600px;
-    margin: auto;
+button:hover {
+    background-color: #66bb6a; /* Slightly darker on hover */
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* Link Style */
+a {
+    color: #43a047; /* Link color */
+    text-decoration: none;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 }
