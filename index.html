@@ -1,77 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Temple des Staffies</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- HEADER -->
     <header>
-        <div class="logo">Le Temple des Staffies</div>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Chiens</a></li>
-                <li><a href="#">Chiots</a></li>
-                <li><a href="#">Actualités</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home"><i class="icon-home"></i> Home</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Le Temple des Staffies</h1>
-            <p>Élevage familial de Staffordshire Bull Terrier</p>
-            <a href="#" class="btn">Découvrir l’élevage</a>
-        </div>
-    </section>
-
-    <!-- PRESENTATION -->
-    <section class="presentation">
-        <div class="content">
-            <img src="images/kara.jpg" alt="Staffie">
-            <div class="text">
-                <h2>Bienvenue dans notre élevage familial</h2>
-                <p>
-                    Passionnés par le Staffordshire Bull Terrier, nous élevons nos chiens 
-                    dans un cadre familial, entourés d’amour et de respect. Kara, Mystik, 
-                    nos enfants et notre chatte Léya participent à la socialisation de chaque chiot.
-                </p>
-                <a href="#" class="btn">En savoir plus</a>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#news">News</a></li>
+            <li><a href="#presentation">Presentation</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="hero">
+            <h1>Welcome to Le Temple des Staffies</h1>
+            <p>Celebrating our beloved staffies!</p>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Stay tuned for the latest updates!</p>
+        </section>
+        <section id="presentation">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and values!</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Insert staffie photos here -->
+                <img src="staffie1.jpg" alt="Staffie 1">
+                <img src="staffie2.jpg" alt="Staffie 2">
+                <img src="staffie3.jpg" alt="Staffie 3">
+                <img src="staffie4.jpg" alt="Staffie 4">
             </div>
-        </div>
-    </section>
-
-    <!-- CHIENS -->
-    <section class="chiens">
-        <h2>Nos chiens</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/chien1.jpg" alt="">
-                <h3>Kara</h3>
-                <a href="#" class="btn">Voir la fiche</a>
-            </div>
-
-            <div class="card">
-                <img src="images/chien2.jpg" alt="">
-                <h3>Mystik</h3>
-                <a href="#" class="btn">Voir la fiche</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Le Temple des Staffies — Tous droits réservés</p>
-    </footer>
-
+        </section>
+    </main>
 </body>
 </html>
