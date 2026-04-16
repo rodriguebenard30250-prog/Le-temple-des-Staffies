@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  height: 95vh;
+  background: url("images/chiots-staffies.jpg") center 60% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* plus sombre pour ton image claire */
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 850px;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-list li {
+  margin: 6px 0;
+  font-size: 1.15rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #d4a373;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #b8865b;
+}
